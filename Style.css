@@ -1,0 +1,166 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* Thiét lap font chung cho trang web */
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f2f2f2; 
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* Chia trang thanh hai cot */ 
+    max-width: 1200px; 
+    /* Do rong toi da cua trang web */
+    margin: 0 auto; 
+    /* Canh giua trang web trén man hinh */ 
+}
+
+/* Phan tieu de trang web */
+header {
+    background-color: #c7cc19;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    grid-column: 1 / span 2;
+    
+    /* Trai déu qua ca hai cot */
+}
+
+/* Phan menu diéu huéng */
+nav {
+    background-color: #ffa486;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / span 2;
+    /* Trai déu qua ca hai cot */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Phan danh sach san pham */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Hién thi 3 san pham trén mdi hang */
+    gap: 20px;
+    /* Khoadng cach gira cac san pham */
+    padding: 20px;
+    grid-column: 1;
+    /* Chi nam & cot dau tien */
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    text-align: center; /* Can gira néi dung trong san pham */
+}
+    
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Phan sidebar */
+.sidebar {
+    background-color: #199cff;
+    color: #fff;
+    padding: 10px;
+    grid-column: 2;
+    /* Chi nam & cét thd hai */
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+    
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Chinh lai bé cuc cho man hinh thiét bi di dong */
+@media (max-width: 576px) {
+    .product-list {
+    grid-template-columns: 1fr;
+    /* Hién thi mét san pham trén méi hang */
+    }
+    .product-card {
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    .sidebar {
+        grid-column: 1 / span 2;
+        /* Trai déu qua cd hai cot */
+    }
+        /* Chinh lai b& cuc cho phan footer */
+    .footer {
+        grid-template-columns: 1fr;
+        /* 1 cot xép chéng 1én nhau trén man hinh di dong */
+    }
+}
+/* Phan footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / span 2;
+    /* Trai déu qua ca hai cot */
+    display: grid;
+}
+    /* Cot trong phan footer */
+.footer-item {
+    padding: 10px;
+}
+
+/* Chinh layout cho may tinh */
+@media (min-width: 768px) {
+    .footer {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 cot trén mdy tinh */
+    }
+}
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.buttonl {
+    border-radius: 2px;
+}
+    
+.button3 {
+    border-radius: 8px;
+}
+
+.button4 {
+    border-radius: 12px;
+}
+    
+.button5 {
+    border-radius: 50%;
+}
+
